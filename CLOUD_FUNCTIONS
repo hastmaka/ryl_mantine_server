@@ -1,0 +1,22 @@
+$ firebase use dev
+$ firebase deploy --only functions
+i functions: Loaded environment variables from .env, .env.dev.
+# Deploys functions with following user-defined environment variables:
+#   PLANET=Earth
+#   AUDIENCE=Dev Humans
+
+$ firebase use prod
+$ firebase deploy --only functions
+i functions: Loaded environment variables from .env, .env.prod.
+# Deploys functions with following user-defined environment variables:
+#   PLANET=Earth
+#   AUDIENCE=Prod Humans
+
+
+//to deploy ust run
+firebase deploy --only functions
+
+this /util/square-client.js file is loading the correct environment variables from the .env file.
+
+//stop all node process when get buggy
+tasklist /FI "IMAGENAME eq node.exe"
